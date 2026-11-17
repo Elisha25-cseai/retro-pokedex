@@ -1,0 +1,105 @@
+/* Import tall, clean 5x7 blocky pixel font matching your reference image */
+@import url('https://googleapis.com');
+
+body {
+  font-family: 'Silkscreen', monospace;
+  /* Bright 1990s console "overworld sky" blue background */
+  background-color: #3cbcfc;
+  color: #111111;
+  padding: 25px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 38px;
+  font-weight: 700;
+  /* Bright arcade yellow with crisp black pixel outline & shadow */
+  color: #ffde00;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 
+    -3px -3px 0 #000000,  
+     3px -3px 0 #000000,
+    -3px  3px 0 #000000,
+     3px  3px 0 #000000,
+     6px  6px 0 #e60012;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
+}
+
+.card {
+  /* Bright crisp white card with bold console framing */
+  background-color: #ffffff;
+  border-radius: 0;
+  border: 4px solid #000000;
+  padding: 18px;
+  width: 225px;
+  text-align: center;
+  /* Hard, bright retro arcade drop shadow */
+  box-shadow: 8px 8px 0px #000000;
+  transition: transform 0.1s steps(2);
+}
+
+/* Snappy 16-bit console bounce on hover */
+.card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px #e60012;
+  background-color: #fffbe6;
+}
+
+.card img {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  /* Bright grassy green console stage box */
+  background-color: #7cfc00;
+  border: 4px solid #000000;
+  padding: 8px;
+}
+
+.card h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 14px 0 10px;
+  /* Bright console red banner for Pokemon name */
+  background-color: #ff2a2a;
+  color: #ffffff;
+  border: 3px solid #000000;
+  padding: 6px 4px;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  background-color: #e8f4ff;
+  border: 2px solid #000000;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: #ffffff;
+  background-color: #ff2a2a;
+  border: 4px solid #000000;
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 6px 6px 0px #000000;
+}
